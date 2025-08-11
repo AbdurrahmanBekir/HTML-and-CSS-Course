@@ -1,4 +1,4 @@
 # HTML-and-CSS-Course
 
-- Colorful and responsive personal portfolio site for AbdurrahmanBekir.
+- Colorful and responsive personal portfolio site.
 - Bootstrap movie project
