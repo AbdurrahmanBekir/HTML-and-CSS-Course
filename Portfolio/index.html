@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AbdurrahmanBekir's Portfolio</title>
+<style>
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #4a148c;
+  padding: 10px 0;
+  z-index: 1000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://cdn.pixabay.com/photo/2015/03/11/19/19/violet-669046_1280.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(30%) brightness(1.1);
+  margin-bottom: 20px;
+}
+
+/* Paragraph hover */
+.hover-text:hover {
+  color: #ff4081;
+  font-weight: bold;
+}
+
+/* Two Column Layout */
+.two-columns {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+.column {
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+}
+.left {
+  background: #00bcd4;
+}
+.right {
+  background: #ff9800;
+}
+
+/* Table */
+.table-section {
+  padding: 40px 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 2px solid #555;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background: #673ab7;
+  color: white;
+}
+
+/* Image Overlay Fade */
+.overlay-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.overlay-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.overlay-container:hover .overlay-image {
+  opacity: 0.3;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Video Section */
+.video-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+video {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Video with Text Overlay */
+.video-wrapper {
+  position: relative;
+  max-width: 720px;
+  margin: 40px auto;
+}
+.video-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.5rem;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background: #4a148c;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Fixed Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#table">Table</a></li>
+      <li><a href="#work">Work</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header with Image and Text Overlay -->
+  <header id="home" class="hero-section">
+    <h1>Welcome to AbdurrahmanBekir's World</h1>
+  </header>
+
+  <!-- Profile Section with Filtered and Rounded Image -->
+  <section id="about" class="profile-section">
+    <h2>About Me</h2>
+    <img src="https://cdn.pixabay.com/photo/2018/06/30/09/33/dahlia-3507326_1280.jpg" alt="Profile" class="profile-img" />
+    <p class="hover-text">Hi! I’m AbdurrahmanBekir, a student passionate about tech, design, and coding.</p>
+  </section>
+
+  <!-- Two-Column Layout -->
+  <section id="table" class="two-columns">
+    <div class="column left">
+      <h3>My Skills</h3>
+      <ul>
+        <li>HTML & CSS</li>
+    
+      </ul>
+    </div>
+    <div class="column right">
+      <h3>My Goals</h3>
+      <p>I aim to build creative, efficient, and impactful web applications and digital experiences.</p>
+    </div>
+  </section>
+
+  <!-- Table Section -->
+  <section class="table-section">
+    <h2>studying Schedule</h2>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Subject</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td>everyday</td>
+        <td>Web Development</td>
+        <td>10:00 AM</td>
+      </tr>
+      <tr>
+        <td>Wednesdays</td>
+        <td>Computer Science</td>
+        <td>12:00 PM</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>Graphics</td>
+        <td>2:00 PM</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Image Overlay Fade -->
+  <section class="overlay-container">
+    <img src="https://cdn.pixabay.com/photo/2021/02/22/08/41/crocus-6039312_1280.jpg" alt="Creative Background" class="overlay-image" />
+    <div class="overlay-text">Creativity Lives Here</div>
+  </section>
+
+  <!-- Autoplay Mute Loop Video -->
+  <section id="work" class="video-section">
+    <h2> Work</h2>
+    <video autoplay muted loop>
+      <source src="https://cdn.pixabay.com/video/2016/01/05/1844-150885307_tiny.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Video with Text Overlay -->
+  <section class="video-overlay-section">
+    <div class="video-wrapper">
+      <video autoplay muted loop>
+        <source src="https://cdn.pixabay.com/video/2016/01/05/1844-150885307_tiny.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay-text">Passion. Vision. Code.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 AbdurrahmanBekir. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
